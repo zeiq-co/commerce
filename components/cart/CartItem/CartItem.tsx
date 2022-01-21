@@ -1,5 +1,5 @@
 import { ChangeEvent, FocusEventHandler, useEffect, useState } from 'react'
-import cn from 'classnames'
+import cn from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import s from './CartItem.module.css'
@@ -93,7 +93,7 @@ const CartItem = ({
                 width={150}
                 height={150}
                 src={item.variant.image?.url || placeholderImg}
-                alt={item.variant.image?.altText || "Product Image"}
+                alt={item.variant.image?.altText || 'Product Image'}
                 unoptimized
               />
             </a>

@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import cn from 'classnames'
+import cn from 'clsx'
 import { useUI } from '@components/ui'
 import { Heart } from '@components/icons'
 import useAddItem from '@framework/wishlist/use-add-item'
@@ -30,9 +30,7 @@ const WishlistButton: FC<Props> = ({
   // @ts-ignore Wishlist is not always enabled
   const itemInWishlist = data?.items?.find(
     // @ts-ignore Wishlist is not always enabled
-    (item) =>
-      item.product_id === productId &&
-      item.variant_id === variant.id
+    (item) => item.product_id === productId && item.variant_id === variant.id
   )
 
   const handleWishlistChange = async (e: any) => {
