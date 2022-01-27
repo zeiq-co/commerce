@@ -18,7 +18,6 @@ export default function getProductOperation({
     preview?: boolean
   }): Promise<Product | {} | any> {
     const config = commerce.getConfig(cfg)
-
     const locale = config.locale
     const { data } = await config.fetch<GetProductQuery>(query, { variables })
     const product = data.product

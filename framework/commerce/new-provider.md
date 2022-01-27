@@ -14,6 +14,7 @@ A commerce provider is a headless e-commerce platform that integrates with the [
 - Spree ([framework/spree](../spree))
 - Kibo Commerce ([framework/kibocommerce](../kibocommerce))
 - Commerce.js ([framework/commercejs](../commercejs))
+- Sanity ([framework/sanity](../sanity))
 
 Adding a commerce provider means adding a new folder in `framework` with a folder structure like the next one:
 
@@ -254,31 +255,32 @@ export const handler: MutationHook<Cart, {}, CartItemBody> = {
 ```
 
 ## Showing progress and features
+
 When creating a PR for a new provider, include this list in the PR description and mark the progress as you push so we can organize the code review. Not all points are required (but advised) so make sure to keep the list up to date.
 
 **Status**
 
-* [ ]  CommerceProvider
-* [ ]  Schema & TS types
-* [ ]  API Operations - Get all collections
-* [ ]  API Operations - Get all pages
-* [ ]  API Operations - Get all products
-* [ ]  API Operations - Get page
-* [ ]  API Operations - Get product
-* [ ]  API Operations - Get Shop Info (categories and vendors working — `vendors` query still a WIP PR on Reaction)
-* [ ]  Hook - Add Item
-* [ ]  Hook - Remove Item
-* [ ]  Hook - Update Item
-* [ ]  Hook - Get Cart (account-tied carts working, anonymous carts working, cart reconciliation working)
-* [ ]  Auth (based on a WIP PR on Reaction - still need to implement refresh tokens)
-* [ ]  Customer information
-* [ ]  Product attributes - Size, Colors
-* [ ]  Custom checkout
-* [ ]  Typing (in progress)
-* [ ]  Tests
+- [ ] CommerceProvider
+- [ ] Schema & TS types
+- [ ] API Operations - Get all collections
+- [ ] API Operations - Get all pages
+- [ ] API Operations - Get all products
+- [ ] API Operations - Get page
+- [ ] API Operations - Get product
+- [ ] API Operations - Get Shop Info (categories and vendors working — `vendors` query still a WIP PR on Reaction)
+- [ ] Hook - Add Item
+- [ ] Hook - Remove Item
+- [ ] Hook - Update Item
+- [ ] Hook - Get Cart (account-tied carts working, anonymous carts working, cart reconciliation working)
+- [ ] Auth (based on a WIP PR on Reaction - still need to implement refresh tokens)
+- [ ] Customer information
+- [ ] Product attributes - Size, Colors
+- [ ] Custom checkout
+- [ ] Typing (in progress)
+- [ ] Tests
 
 ## Adding the Node.js provider API
 
 TODO
 
-> The commerce API is currently going through a refactor in https://github.com/vercel/commerce/pull/252 - We'll update the docs once the API is released.
+> The commerce API is currently going through a refactor in <https://github.com/vercel/commerce/pull/252> - We'll update the docs once the API is released.

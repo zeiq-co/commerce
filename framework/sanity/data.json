@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzU0NDczMjUwMjQ0MjA=",
-      "name": "New Short Sleeve T-Shirt",
+      "name": "New Short Sleeve T-Shirt SS",
       "vendor": "Next.js",
       "path": "/new-short-sleeve-t-shirt",
       "slug": "new-short-sleeve-t-shirt",
@@ -43,6 +43,21 @@
               ]
             }
           ]
+        },
+        {
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzU0NDczMjUwMjQ0MjA3s=",
+          "options": [
+            {
+              "__typename": "MultipleChoiceOption",
+              "id": "asf",
+              "displayName": "Size",
+              "values": [
+                {
+                  "label": "XS"
+                }
+              ]
+            }
+          ]
         }
       ],
       "options": [
@@ -60,6 +75,9 @@
           "id": "option-size",
           "displayName": "Size",
           "values": [
+            {
+              "label": "XS"
+            },
             {
               "label": "S"
             },

@@ -30,6 +30,8 @@ function getProviderName() {
       ? 'shopify'
       : process.env.NEXT_PUBLIC_SWELL_STORE_ID
       ? 'swell'
+      : process.env.SANITY_KEY
+      ? 'sanity'
       : 'local')
   )
 }
