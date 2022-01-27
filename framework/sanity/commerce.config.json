@@ -1,8 +1,9 @@
 {
+  "provider": "sanity",
   "features": {
+    "wishlist": true,
     "cart": true,
     "search": true,
-    "wishlist": true,
     "customerAuth": true,
     "customCheckout": true
   }

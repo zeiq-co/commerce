@@ -18,6 +18,7 @@ const PROVIDERS = [
   'kibocommerce',
   'spree',
   'commercejs',
+  'sanity',
 ]
 
 function getProviderName() {
